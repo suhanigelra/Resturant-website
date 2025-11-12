@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="stylee.css">
+    <script src="projectt.js"></script>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">Delicious Bites</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#food-menu">Food Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#book">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Welcome to Delicious Bites</h1>
+            <button onclick="exploreMenu()">Explore Menu</button>
+        </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="food-menu" class="food-menu">
+        <h2>Our Menu</h2>
+        <input type="text" id="searchFood" placeholder="Search food..." onkeyup="filterFood()">
+        <div class="food-items" id="foodItems">
+            <div class="food-card">
+                <img src="https://c.ndtvimg.com/2018-11/o2l9mdao_pizza_625x300_01_November_18.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Price: $10</p>
+            </div>
+            <div class="food-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDcH_MxdsTsK6KMVon-Ybfa2WiT-R70ZjWw&s" alt="Burger">
+                <h3>Burger</h3>
+                <p>Price: $7</p>
+            </div>
+            <div class="food-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-_PzrCRZPnEo-1hB4BMofk6LAvJN0hSGCQ&s" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Price: $9</p>
+            </div>
+            <div class="food-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__tuaCCeBfBPjeM7l81rHzPBAeMrbfDIIIw&s" alt="Salad">
+                <h3>Salad</h3>
+                <p>Price: $5</p>
+            </div>
+            <div class="food-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DHqoIPhtlRft2B96FmZ8vHnTdyY0qQXSOQ&s" alt="Sandwich">
+                <h3>Sandwich</h3>
+                <p>Price: $6</p>
+            </div>
+            <div class="food-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gyboz-Y0zkIhwxwnfU_waXSYDdX8SohZuQ&s" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Price: $12</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Delicious Bites is the best place to enjoy tasty and fresh meals. We serve food with love and passion!</p>
+    </section>
+
+    <!-- Book a Table Section -->
+    <section id="book" class="book-table">
+        <h2>Book a Table</h2>
+        <form id="tableForm" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="number" id="people" placeholder="Number of People">
+            <input type="date" id="date">
+            <button type="submit">Book Now</button>
+        </form>
+        <div class="tables">
+            <div class="table-card">
+                <img src="https://media.istockphoto.com/id/863577920/photo/decorated-dining-tablet-on-christmas-eve.jpg?s=612x612&w=0&k=20&c=GOzOA0ERMSz_LrY7mfFT3QTDS1cRR1falYHY3A0a8ZQ=
+                " alt="Table 1">
+                <p>Table for 2</p>
+            </div>
+            <div class="table-card">
+                <img src="https://media.istockphoto.com/id/2019308975/photo/table-setting.jpg?s=612x612&w=0&k=20&c=1OTIlaKNjdlXV6Pw6oZ679IUvOPg7Y-9YJziQrRMoXE=
+                " alt="Table 2">
+                <p>Table for 4</p>
+            </div>
+            <div class="table-card">
+                <img src="https://www.shutterstock.com/image-photo/multiethnic-group-people-festive-dinner-600nw-2370613307.jpg
+                " alt="Table 3">
+                <p>Table for 6</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
